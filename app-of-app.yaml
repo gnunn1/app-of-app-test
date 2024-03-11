@@ -12,7 +12,7 @@ spec:
     path: child
     repoURL: https://github.com/gnunn1/app-of-app-test
     targetRevision: HEAD
-syncPolicy:
-  automated:
-    prune: true
-    selfHeal: true
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
