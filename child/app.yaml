@@ -12,7 +12,13 @@ spec:
     path: .
     repoURL: https://github.com/gitops-examples/simple-app-example
     targetRevision: HEAD
-  # syncPolicy:
-  #   automated:
-  #     prune: true
-  #     selfHeal: true
+  syncPolicy:
+    # automated:
+    #   prune: true
+    #   selfHeal: true
+    retry:
+      limit: 5
+      backoff:
+        duration: 5s
+        factor: 2
+        maxDuration: 3m
