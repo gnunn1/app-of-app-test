@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: product-catalog
+  name: app-of-app
   namespace: gitops-demo
 spec:
   destination:
@@ -9,6 +9,6 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: .
-    repoURL: https://github.com/gitops-examples/simple-app-example
+    path: child
+    repoURL: https://github.com/gnunn1/app-of-app-test
     targetRevision: HEAD
