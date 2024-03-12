@@ -5,7 +5,7 @@ metadata:
   namespace: gitops-demo
 spec:
   destination:
-    namespace: fake-gitops-namespace
+    namespace: gitops-demo
     server: https://kubernetes.default.svc
   project: default
   source:
