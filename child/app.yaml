@@ -12,9 +12,9 @@ spec:
     path: .
     repoURL: https://github.com/gitops-examples/simple-app-example
     targetRevision: HEAD
-  syncPolicy:
+  # syncPolicy:
     # automated:
     #   prune: true
     #   selfHeal: true
-    syncOptions:
-    - CreateNamespace=true
+    # syncOptions:
+    # - CreateNamespace=true
